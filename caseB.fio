@@ -1,0 +1,17 @@
+[global]
+ioengine=libaio
+direct=1
+filename=/home/himanshi/Lab10_FIO_Results/db-test.bin
+size=1g
+runtime=45
+time_based=1
+ramp_time=5
+numjobs=1
+group_reporting=1
+percentile_list=50:95:99
+
+[caseB]
+rw=randrw
+bs=4k
+rwmixread=70
+iodepth=1
